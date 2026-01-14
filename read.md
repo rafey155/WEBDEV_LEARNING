@@ -1,0 +1,1 @@
+this is the notes of web dev 
