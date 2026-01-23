@@ -11,7 +11,7 @@ html, body{
     color: #fff;
 }
 
-.nav-conatner{
+.nav-container{
     padding: 20px;
 }
 h2{
@@ -59,4 +59,82 @@ h2{
     background-color: #0917e0;
     color: #fff;
     cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------- */
+.nav2 {
+    background-color: rgb(236, 249, 248);
+    width: 300px;
+    padding: 10px 20px;
+}
+
+.nav2 ul{
+    list-style-type: none;
+}
+
+.nav2 li{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+
+.nav2 .login-btn{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #5ce7ee;
+}
+.nav2 li:hover{
+    background-color: #5ce7ee;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.nav3{
+    background-color: rgb(3, 84, 128);
+    padding: 10px;
+}
+
+.nav3 ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.nav3 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #f2efef;
+    padding: 10px;
+    display: block;
+}
+
+.nav3 .drop-down-cnt{
+    display: none;
+}
+
+.nav3 .dropdown:hover .drop-down-cnt{
+    display: block;
+    position: absolute;
+    background-color: rgb(59, 57, 57);
+}
+
+.nav3 .login_btn{
+    font-size: 15px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.nav3 .login_btn:hover{
+    background-color: rgb(95, 95, 232);
+    color: whitesmoke;
 }
