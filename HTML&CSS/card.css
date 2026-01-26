@@ -12,7 +12,7 @@ html, body{
 
 .container{
     height: 100%;
-    background: linear-gradient(135deg, #67a2d5, #0798b8);
+    background: linear-gradient(135deg, #518cc0, #034e5f);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +62,8 @@ button{
     background-color: #0540e3;
     color: whitesmoke;
     font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 button:hover{
