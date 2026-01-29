@@ -34,6 +34,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #3a3a3a;
+    font-size: 20px;
 }
 
 .box:nth-child(even){
@@ -81,4 +83,56 @@ html, body{
 
 .item5{
     grid-column: 1/4;
+}
+
+.content5{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grdi-item5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.header{
+    grid-column: 1/4;
+}
+
+.side{
+    grid-row: 2/4;
+}
+
+.m-cnt{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.ft{
+    grid-column: 1/4;
+}
+
+.content6{
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.grid-item6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.content7{
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.grid-item7{
+    display: grid;
+    
 }
