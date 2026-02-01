@@ -1,11 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap practice</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Chose option
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Youtube</a></li>
+                <li><a class="dropdown-item" href="#">Udemy</a></li>
+                <li><a class="dropdown-item" href="#">Corsera</a></li>
+                <li><a class="dropdown-item" href="#">PW</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-0">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/img/pexels-hiteshchoudhary-18148933.jpg"
+              class="d-block w-100 c-img"
+              alt="img" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/pexels-hiteshchoudhary-18148936.jpg"
+              class="d-block w-100 c-img"
+              alt="img" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/pexels-hiteshchoudhary-18148937.jpg"
+              class="d-block w-100 c-img"
+              alt="img" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid px-0 mt-3">
+      <div class="cards">
+        <div class="card" style="width: 18rem">
+          <img src="/img/google_antigravity-logo_brandlogos.net_qu4jc.png" class="card-img-top" alt="logo" />
+          <div class="card-body">
+            <h5 class="card-title">Google Antigravity</h5>
+            <p class="card-text">
+              AI-native, agent-first integrated development environment (IDE)
+            </p>
+            <a href="https://youtu.be/OWZr4EzQkd8?si=mt0xm-EnJP0cTOfG" class="btn btn-primary w-100">Watch Video</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="/img/google_antigravity-logo_brandlogos.net_qu4jc.png" class="card-img-top" alt="logo" />
+          <div class="card-body">
+            <h5 class="card-title">Google Antigravity</h5>
+            <p class="card-text">
+             AI-native, agent-first integrated development environment (IDE)
+            </p>
+            <a href="https://youtu.be/EY4eqjdrEew?si=Yf6pkPl3WpgY5R_X" class="btn btn-primary w-100">Watch Video</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="/img/google_antigravity-logo_brandlogos.net_qu4jc.png" class="card-img-top " alt="logo" />
+          <div class="card-body">
+            <h5 class="card-title">Google Antigravity</h5>
+            <p class="card-text">
+              AI-native, agent-first integrated development environment (IDE)
+            </p>
+            <a href="https://youtu.be/24dfe8q7Aq4?si=1x1TR15Z1EBzmHsr" class="btn btn-primary w-100">Watch Video</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class=" fc container-fluid px-0 mt-5">
+        <h4>&copy,  2026 Your Demo. Designed & Developed by Mohd Rafey</h4>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
