@@ -7,9 +7,18 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-400: oklch(75% 0.183 55.934);
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -163,6 +172,9 @@
   }
 }
 @layer utilities {
+  .m-10 {
+    margin: calc(var(--spacing) * 10);
+  }
   .table {
     display: table;
   }
@@ -179,15 +191,51 @@
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
+  .bg-orange-400 {
+    background-color: var(--color-orange-400);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-19 {
+    padding: calc(var(--spacing) * 19);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-green-400 {
     color: var(--color-green-400);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .underline {
     text-decoration-line: underline;
+  }
+  .underline-offset-0 {
+    text-underline-offset: 0px;
   }
   .outline {
     outline-style: var(--tw-outline-style);
